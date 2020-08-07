@@ -1,7 +1,7 @@
 # PPL_Lab
 
-MIS NO : 111903051
+<b>MIS NO : 111903051</b>
 
-<h>List of Experiments</h>
+<b>List of Experiments</b>
 
 Experiment 1 : Hello World
