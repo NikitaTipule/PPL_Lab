@@ -1,0 +1,36 @@
+----------------------------------------------
+A-1 Declarations, Expressions, and Assignments
+----------------------------------------------
+
+
+        1   How  do the  declarations  look in  the  GIMPLE?Specifically,  what
+            happens to multiple  variables declared and initialized  on the same
+            line? What happens to global declaration [int Z]?
+  Ans : One variable is declared per line . The global variable is not declared . After declarization variables are initialized.
+  
+  
+  
+        2   How are complex  expressions such as [c  = a * b +  25] broken down?
+            Can you  determine a  rule as  to when  temporary variables  will be
+            introduced?
+   Ans :    When  gimplification  encounters  a  subexpression  which  is  too  complex,it          creates  a  new temporary  variable  to  hold  the  value  of  the subexpression, and adds a new statement to initialize  it  before  the  current  statement. After evaluating the subexpressions then finally the answer gets stored into the variable which we have created.
+   
+   
+        3   How are  floats/doubles represented in  GIMPLE? What happens  when a
+            float/double is assigned to an integer in [Z = r]?
+   Ans  :   
+   
+            While assigning the float value to a integer variable , initially float/double value is converted into integer value means its fractional part gets deducted and integer value is stored into a temperary variable and then the value in temperary variable is assigned to integer variable.
+            
+            
+        4   How  are reads/writes  to the  global variable  Z performed?  Why is
+            there a temporary introduced  for the statement [Z = Z  + 1] but not
+            for the statements [q = Z] or [Z = p]?
+   Ans  :   
+   
+   
+            If there are simple ooperations then they are performed means temporary variables variables does not generates bt while performing complex operations temporarary variables are introduced . [q = Z] or [Z = p] these operations are simple hence temporary variables are not introduced bt in  [Z = Z  + 1] temporary variables gets introduced.           
+            
+ 
+ 
+ 
