@@ -1,0 +1,21 @@
+---------------------------------------------
+A-2 Conditional Jumps and Control Flow Graphs
+---------------------------------------------
+
+
+
+        1   How have if-blocks  been translated into GIMPLE  statements? Can you
+            differentiate between conditional and unconditional gotos?
+  Ans :     While executing the if block the statements under the if block , it gives one code to          it and for else block it gives the other code. these codes are defined after this block and then it is executed.
+         conditional branch is happened based on some condition like if condition in C. Transfer of control of the program will depend on the outcome of this condition.
+
+Uncoonditional branching occurs without any condition like goto statement.
+
+
+
+        2   Repeat  the  above compilation,  but  now  asking for  another  dump
+            that  of  the pass  "cfg".  View  this  pass  and say  whether  this
+            representation makes it easier to  read and understand GIMPLEs. Draw
+            the control-flow graph  of the program A-2.c on a  piece of paper by
+            looking at the CFG dump.
+            

@@ -1,0 +1,20 @@
+------------------------------------
+B-4 Common Subexpression Elimination
+------------------------------------
+
+        1   How many  times is the expression  (a + c) computed  in the original
+            code (as seen in the SSA pass)? What about after the FRE pass?
+  Ans :   Twice as seen in SSA pass and only once after the FRE pass.
+  
+
+       2   Have  there been  any more  optimizations  after FRE?  How will  you
+            check?  
+  Ans : 
+  
+        3   Why did  we have  to put a  "return b" in  this assignment?  What if
+            "return b" is changed to "return 0"? Will it make any difference?
+   Ans :    when we dont return b the it will beccome an dead code because it dont return anything means no output . when we change "return b" to "return 0" then same thing will happen here also.             
+            
+                      
+  
+  

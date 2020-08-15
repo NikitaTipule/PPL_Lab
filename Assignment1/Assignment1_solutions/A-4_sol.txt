@@ -1,0 +1,18 @@
+-----------------------
+A-4 Arrays and Pointers
+-----------------------
+
+
+        1   How is array declaration and initialization handled?
+  Ans :     Array is declared in a single statement . 
+            Array initialisation takes place one element per statement.
+            
+       
+        2   Why does the statement a[i] = b[i] get broken down to two steps with
+            an intermediate temporary?
+  Ans :     It get broken because only one memory operation per instruction is permitted.
+  
+  
+        3   Why are there CLOBBER statements at the end?
+  Ans :     
+        

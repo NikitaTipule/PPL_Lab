@@ -1,0 +1,14 @@
+---------------------
+B-1 Function Inlining
+---------------------
+
+        1   The body  of AddTwo(x)  seems to  be inlined into  the call  of main
+            rendering the function useless (nobody else is calling it). Then why
+            is the definition of AddTwo(x) still there all the way till the last
+            pass (B-1.c.*.optimized)?
+  Ans :    It can't be discarded. it may be called from another translation unit.
+  
+
+        2   Is there any way to get rid of it?
+  Ans :    we can add static keyworld to the prototype to signify that its linkage is internal only.     
+       

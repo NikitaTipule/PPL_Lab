@@ -1,0 +1,7 @@
+------------------
+B-2 Loop Unrolling
+------------------
+
+        1   What will happen if "a = a + N" is replaced by "a = a + 1"?
+  Ans :     The compilar will be able to find the final value of a and it will return 14.           
+       

@@ -1,0 +1,9 @@
+---------------------------
+B-3 Value Range Propagation
+---------------------------
+
+
+        1   In the file B-3.c, what values  can variable `a' take? Will the `if'
+            condition [a  < 4] ever  be true?  Inspect the file  B-3.c.*.vrp1 to
+            analyze the dump.
+  Ans :    a takes values from 4 to 99. And the if condition will never be true.
