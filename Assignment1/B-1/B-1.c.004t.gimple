@@ -1,0 +1,27 @@
+AddTwo (int a)
+{
+  int D.1799;
+
+  a = a + 2;
+  D.1799 = a;
+  return D.1799;
+}
+
+
+main ()
+{
+  int D.1801;
+
+  {
+    int x;
+
+    x = 3;
+    x = AddTwo (x);
+    D.1801 = x;
+    return D.1801;
+  }
+  D.1801 = 0;
+  return D.1801;
+}
+
+

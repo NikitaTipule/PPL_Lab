@@ -1,0 +1,14 @@
+38 ccp "Copies propagated" "main" 1
+38 ccp "Constants propagated" "main" 2
+38 ccp "Statements deleted" "main" 3
+43 fre "SCC iterations == 3" "main" 2
+44 evrp "Incremental SSA update" "main" 1
+55 release_ssa "SSA names released" "main" 2
+55 release_ssa "SSA name holes removed" "main" 2
+97 ccp "Copies propagated" "main" 1
+97 ccp "Statements deleted" "main" 1
+99 cunrolli "Incremental SSA update" "main" 1
+106 fre "Eliminated" "main" 3
+139 pre "compute_antic iterations == 2" "main" 1
+139 pre "insert iterations == 1" "main" 1
+266 combine "two-insn combine" "main" 3

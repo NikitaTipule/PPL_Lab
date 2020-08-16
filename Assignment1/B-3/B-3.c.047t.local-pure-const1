@@ -1,0 +1,64 @@
+
+;; Function printf (printf, funcdef_no=15, decl_uid=798, cgraph_uid=15, symbol_order=15)
+
+
+
+ local analysis of printf
+   scanning: _4 = __printf_chk (1, __fmt_2(D), __builtin_va_arg_pack ());
+  scanning: return _4;
+Function is locally looping.
+Function can locally free.
+__attribute__((__artificial__, __gnu_inline__, __always_inline__))
+printf (const char * restrict __fmt)
+{
+  int _4;
+
+  <bb 2> [100.00%]:
+  _4 = __printf_chk (1, __fmt_2(D), __builtin_va_arg_pack ());
+  return _4;
+
+}
+
+
+
+;; Function main (main, funcdef_no=23, decl_uid=2444, cgraph_uid=23, symbol_order=23) (executed once)
+
+
+
+ local analysis of main
+   scanning: b_9 = b_3 * 2;
+  scanning: a_11 = a_1 + 1;
+  scanning: if (a_1 <= 99)
+  scanning: __printf_chk (1, "%d%d", 100, b_14);
+  scanning: return 0;
+Function is locally looping.
+Function can locally free.
+main ()
+{
+  int D.2464;
+  int b;
+  int a;
+
+  <bb 2> [1.03%]:
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [98.97%]:
+  b_9 = b_3 * 2;
+  a_11 = a_1 + 1;
+
+  <bb 4> [100.00%]:
+  # a_1 = PHI <4(2), a_11(3)>
+  # b_3 = PHI <b_5(D)(2), b_9(3)>
+  if (a_1 <= 99)
+    goto <bb 3>; [98.97%]
+  else
+    goto <bb 5>; [1.03%]
+
+  <bb 5> [1.03%]:
+  # b_14 = PHI <b_3(4)>
+  __printf_chk (1, "%d%d", 100, b_14);
+  return 0;
+
+}
+
+

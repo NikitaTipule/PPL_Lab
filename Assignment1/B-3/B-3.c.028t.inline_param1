@@ -1,0 +1,97 @@
+
+;; Function printf (printf, funcdef_no=15, decl_uid=798, cgraph_uid=15, symbol_order=15)
+
+
+Analyzing function body size: printf
+
+Inline summary for printf/15 always_inline inlinable
+  self time:       15
+  global time:     0
+  self size:       7
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000, predicate:(true)
+    size:3.000000, time:2.000000, predicate:(not inlined)
+  calls:
+    __printf_chk/24 function body not available
+      loop depth: 0 freq:1000 size: 4 time: 13 callee size: 0 stack: 0
+       op0 is compile time invariant
+
+__attribute__((__artificial__, __gnu_inline__, __always_inline__))
+printf (const char * restrict __fmt)
+{
+  int _4;
+
+  <bb 2> [0.00%]:
+  _4 = __printf_chk (1, __fmt_2(D), __builtin_va_arg_pack ());
+  return _4;
+
+}
+
+
+
+;; Function main (main, funcdef_no=23, decl_uid=2444, cgraph_uid=23, symbol_order=23)
+
+
+Analyzing function body size: main
+
+Inline summary for main/23 inlinable
+  self time:       22
+  global time:     0
+  self size:       14
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:7.000000, predicate:(true)
+    size:3.000000, time:2.000000, predicate:(not inlined)
+  calls:
+    printf/15 function not considered for inlining
+      loop depth: 0 freq:1000 size: 4 time: 13 callee size: 3 stack: 0
+       op0 is compile time invariant
+
+main ()
+{
+  int b;
+  int a;
+  int _8;
+
+  <bb 2> [0.00%]:
+  a_4 = 4;
+  goto <bb 7>; [0.00%]
+
+  <bb 3> [0.00%]:
+  if (a_1 <= 3)
+    goto <bb 4>; [0.00%]
+  else
+    goto <bb 5>; [0.00%]
+
+  <bb 4> [0.00%]:
+  b_10 = b_3 + 2;
+  goto <bb 6>; [0.00%]
+
+  <bb 5> [0.00%]:
+  b_9 = b_3 * 2;
+
+  <bb 6> [0.00%]:
+  # b_2 = PHI <b_10(4), b_9(5)>
+  a_11 = a_1 + 1;
+
+  <bb 7> [0.00%]:
+  # a_1 = PHI <a_4(2), a_11(6)>
+  # b_3 = PHI <b_5(D)(2), b_2(6)>
+  if (a_1 <= 99)
+    goto <bb 3>; [0.00%]
+  else
+    goto <bb 8>; [0.00%]
+
+  <bb 8> [0.00%]:
+  printf ("%d%d", a_1, b_3);
+  _8 = 0;
+  return _8;
+
+}
+
+

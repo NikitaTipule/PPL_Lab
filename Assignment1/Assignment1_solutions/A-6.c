@@ -1,4 +1,6 @@
-main()
+#include<stdio.h>
+
+int main()
 {
    int i, j;
    for (i=2; i<=100; i++){
@@ -12,5 +14,5 @@ main()
          printf("%d", i);
       }
     }
- 
+    return 0;
 }
