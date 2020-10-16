@@ -14,6 +14,7 @@ void main() {
 			movl   $0x0, %ebx  
 			int    $0x80     
 			call   -0x2f       
-			.string \"/bin/sh\"            );
+			.string \"/bin/sh\"           
+ );
 }
 
