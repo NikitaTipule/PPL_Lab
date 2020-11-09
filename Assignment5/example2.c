@@ -1,3 +1,4 @@
+
 void function(char *str) {
 	char buffer[16];
 }
